@@ -1,0 +1,26 @@
+﻿<html style="font-size: 16px;" lang="ru">
+<head>
+    @await Html.PartialAsync("MetategsPartial")
+</head>
+<body>
+    <!--Шапка-->
+    <div>
+        @await Html.PartialAsync("HeaderPartial")
+        <!--Шапка-->
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <!--Основной контент-->
+                        @RenderBody()
+                        <!--Основной контент-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Подвал-->
+        @await Html.PartialAsync("FooterPartial")
+        <!--Подвал-->
+    </div>
+</body>  
+</html>
